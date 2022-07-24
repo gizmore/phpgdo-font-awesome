@@ -21,7 +21,7 @@ final class Module_FontAwesome extends GDO_Module
 	
 	public function onLoadLanguage() : void { $this->loadLanguage('lang/fa'); }
 	
-	public function getModuleLicenseFilenames() : array
+	public function getLicenseFilenames() : array
 	{
 		return [
 			'bower_components/@fortawesome/fontawesome-free/LICENSE.txt'
@@ -44,7 +44,7 @@ final class Module_FontAwesome extends GDO_Module
 	############
 	### Init ###
 	############
-	public function onInit() : void
+	public function onInit()
 	{
 		# Set icon provider.
 		$method = ["GDO\FontAwesome\FA_Icon", 'iconS'];

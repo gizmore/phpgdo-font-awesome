@@ -74,6 +74,7 @@ final class FA_Icon
         'pause' => 'pause-circle',
         'phone' => 'phone-office',
         'plus' => 'plus',
+    	'position' => 'map-marker',
         'quote' => 'quote-left',
         'remove' => 'minus',
         'reply' => 'reply',
