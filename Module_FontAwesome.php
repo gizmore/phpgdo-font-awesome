@@ -12,7 +12,7 @@ use GDO\Core\GDT_Checkbox;
  * Choose between fas and far style globally. 
  * 
  * @author gizmore
- * @version 6.11.0
+ * @version 7.0.1
  * @since 6.3.0
  */
 final class Module_FontAwesome extends GDO_Module
@@ -46,9 +46,7 @@ final class Module_FontAwesome extends GDO_Module
 	############
 	public function onInit()
 	{
-		# Set icon provider.
-		$method = ["GDO\FontAwesome\FA_Icon", 'iconS'];
-		GDT_Icon::$iconProvider = $method; 
+		GDT_Icon::$iconProvider = [FA_Icon::class, 'iconS']; 
 	}
 	
 	public function onIncludeScripts() : void

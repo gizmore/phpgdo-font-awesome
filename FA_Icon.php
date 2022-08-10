@@ -2,17 +2,18 @@
 namespace GDO\FontAwesome;
 
 use GDO\UI\GDT_IconUTF8;
+use GDO\Core\GDT;
 
 /**
  * FontAwesome icon provider.
  * 
  * @author gizmore
- * @version 6.11.2
+ * @version 7.0.1
  * @since 6.1.0
  */
 final class FA_Icon
 {
-    public static $MAP = array(
+    public static array $MAP = [
         'account' => 'address-card',
         'add' => 'plus',
         'alert' => 'bell',
@@ -98,23 +99,22 @@ final class FA_Icon
         'users' => 'users',
         'view' => 'eye',
         'wait' => 'alarm-clock',
-    );
+    ];
     
-	public static function iconS($icon, $iconText, $style)
+	public static function iconS(string $icon, string $iconText=null, string $style=null) : string
 	{
 	    static $fas;
-	    
 	    if ($fas === null)
 	    {
 	        $fas = Module_FontAwesome::instance()->cfgFontAwesomeStyle();
 	    }
-	    
 		if (!isset(self::$MAP[$icon]))
 		{
 			return GDT_IconUTF8::iconS($icon, $iconText, $style);
 		}
-		return sprintf('<span class="gdo-icon gdo-fa-icon"%s><i class="%s fa-%s" title="%s"></i></span>', 
-		    $style, $fas, self::$MAP[$icon], $iconText);
+		$title = $iconText ? " title=\"{$iconText}\"" : GDT::EMPTY_STRING;
+		return sprintf('<span class="gdo-icon gdo-fa-icon"%s><i class="%s fa-%s"%s></i></span>',
+		    $style, $fas, self::$MAP[$icon], $title);
 	}
 	
 }
