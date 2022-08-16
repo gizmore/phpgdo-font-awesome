@@ -3,7 +3,6 @@ namespace GDO\FontAwesome;
 
 use GDO\Core\GDO_Module;
 use GDO\UI\GDT_Icon;
-use GDO\Javascript\Module_Javascript;
 use GDO\Core\GDT_EnumNoI18n;
 use GDO\Core\GDT_Checkbox;
 
@@ -51,7 +50,7 @@ final class Module_FontAwesome extends GDO_Module
 	
 	public function onIncludeScripts() : void
 	{
-		$min = Module_Javascript::instance()->cfgMinAppend();
+		$min = $this->cfgMinAppend();
 		$this->addBowerCSS("@fortawesome/fontawesome-free/css/all$min.css");
 		if ($this->cfgFontAwesomeShim4())
 		{
