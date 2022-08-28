@@ -17,6 +17,7 @@ use GDO\Core\GDT_Checkbox;
 final class Module_FontAwesome extends GDO_Module
 {
 	public int $priority = 12;
+	public string $license = 'Font Awesome Free License';
 	
 	public function onLoadLanguage() : void { $this->loadLanguage('lang/fa'); }
 	

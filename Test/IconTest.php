@@ -14,7 +14,23 @@ use function PHPUnit\Framework\assertTrue;
  */
 final class IconTest extends TestCase
 {
-    public function testAllIcons()
+	public function testAllUTF8Icons()
+	{
+		foreach (FA_Icon::$MAP as $key => $icon)
+		{
+			try
+			{
+				assertTrue(isset(GDT_IconUTF8::$MAP[$key]), "checking if Icon '{$key}' that looks like {$icon} is defined in FA.");
+			}
+			catch (\Throwable $ex)
+			{
+				echo "UTF8_Icon $key is missing.";
+			}
+		}
+		
+	}
+	
+    public function testAllFAIcons()
     {
         foreach (GDT_IconUTF8::$MAP as $key => $icon)
         {
