@@ -31,6 +31,7 @@ final class FA_Icon
         'block' => 'ban',
         'book' => 'book',
         'bulb' => 'lightbulb',
+    	'business' => 'store',
         'calendar' => 'calendar-alt',
         'captcha' => 'lock',
         'caret' => 'caret-right',
