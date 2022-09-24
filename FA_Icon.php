@@ -78,7 +78,7 @@ final class FA_Icon
         'message' => 'comment-dots',
         'minus' => 'minus',
         'money' => 'money-bill',
-    	'numeric' => 'input-numeric',
+    	'numeric' => 'hashtag',
         'password' => 'key',
         'pause' => 'pause-circle',
         'phone' => 'phone-office',
