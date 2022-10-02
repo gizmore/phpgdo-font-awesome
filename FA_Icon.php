@@ -27,7 +27,7 @@ final class FA_Icon
         'back' => 'arrow-left',
         'bank' => 'piggy-bank',
         'bars' => 'bars',
-    	'bee' => 'bee',
+    	'bee' => 'cow',
         'birthday' => 'birthday-cake',
         'block' => 'ban',
         'book' => 'book',
