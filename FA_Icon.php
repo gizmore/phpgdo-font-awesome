@@ -16,6 +16,7 @@ final class FA_Icon
     public static array $MAP = [
         'account' => 'address-card',
         'add' => 'plus',
+    	'address' => 'address-book',
         'alert' => 'bell',
         'all' => 'list',
         'arrow_down' => 'sort-down',
