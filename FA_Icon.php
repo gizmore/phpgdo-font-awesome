@@ -19,6 +19,7 @@ final class FA_Icon
     	'address' => 'address-book',
         'alert' => 'bell',
         'all' => 'list',
+    	'amt' => 'calculator',
         'arrow_down' => 'sort-down',
         'arrow_left' => 'arrow-left',
         'arrow_right' => 'arrow-right',
