@@ -50,6 +50,7 @@ final class FA_Icon
         'credits' => 'credit-card',
         'cut' => 'cut',
         'delete' => 'minus-circle',
+    	'diamond' => 'diamond',
         'done' => 'check',
         'done_all' => 'check-double',
         'download' => 'download',
