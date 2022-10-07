@@ -41,6 +41,7 @@ final class FA_Icon
     	'cc' => 'address-card',
         'check' => 'check',
     	'close' => 'window-close',
+    	'code' => 'code',
     	'color' => 'palette',
     	'copyright' => 'copyright',
     	'construction' => 'person-digging',
