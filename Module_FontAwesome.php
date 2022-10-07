@@ -35,7 +35,7 @@ final class Module_FontAwesome extends GDO_Module
 	{
 	    return [
 	    	GDT_EnumNoI18n::make('fa_style')->enumValues('fa', 'fab', 'far', 'fas')->notNull()->initial('fas'),
-	    	GDT_Checkbox::make('fa_shim4')->initial('1'),
+	    	GDT_Checkbox::make('fa_shim4')->initial('0'),
 	    ];
 	}
 	public function cfgFontAwesomeStyle() { return $this->getConfigVar('fa_style'); }

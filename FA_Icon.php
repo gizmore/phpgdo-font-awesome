@@ -3,6 +3,7 @@ namespace GDO\FontAwesome;
 
 use GDO\UI\GDT_IconUTF8;
 use GDO\Core\GDT;
+use GDO\Util\Strings;
 
 /**
  * FontAwesome icon provider.
@@ -123,6 +124,7 @@ final class FA_Icon
         'view' => 'eye',
     	'vote' => 'vote-yea',
         'wait' => 'alarm-clock',
+    	'whatsapp' => 'whatsapp fa-brands',
     	'work' => 'person-digging',
     	'write' => 'pencil',
     ];
@@ -138,9 +140,12 @@ final class FA_Icon
 		{
 			return GDT_IconUTF8::iconS($icon, $iconText, $style);
 		}
+		$myico = self::$MAP[$icon];
+		$myfas = Strings::substrFrom($myico, ' ', $fas);
+		$myico = Strings::substrTo($myico, ' ', $myico);
 		$title = $iconText ? " title=\"{$iconText}\"" : GDT::EMPTY_STRING;
 		return sprintf('<span class="gdo-icon gdo-fa-icon"%s><i class="%s fa-%s"%s></i></span>',
-		    $style, $fas, self::$MAP[$icon], $title);
+			$style, $myfas, $myico, $title);
 	}
 	
 }
