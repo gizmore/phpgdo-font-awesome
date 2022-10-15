@@ -68,6 +68,7 @@ final class FA_Icon
         'gender' => 'venus-mars',
         'group' => 'users',
         'guitar' => 'guitar',
+    	'heart' => 'heart',
         'help' => 'question-circle',
     	'house' => 'house',
     	'icecream' => 'ice-cream',
