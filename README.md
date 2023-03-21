@@ -6,7 +6,6 @@ iconfont module for
 
 Simple install and font awesome icons are working.
 
-
 ## phpgdo-font-awesome: Installation
 
 Please refer to the
@@ -16,4 +15,3 @@ For CLI:
 
     ./gdo_adm.sh provide fontawesome
     # Follow the instructions
-    
