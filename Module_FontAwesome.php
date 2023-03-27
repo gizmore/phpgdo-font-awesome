@@ -40,7 +40,7 @@ final class Module_FontAwesome extends GDO_Module
 		];
 	}
 
-	public function onModuleInit()
+	public function onModuleInit(): void
 	{
 		GDT_Icon::$iconProvider = [FA_Icon::class, 'iconS'];
 	}
