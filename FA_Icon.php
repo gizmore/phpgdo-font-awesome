@@ -96,7 +96,7 @@ final class FA_Icon
 		'password' => 'key',
 		'pause' => 'pause-circle',
 		'percent' => 'percent',
-		'phone' => 'phone-office',
+		'phone' => 'phone',
 		'plus' => 'plus',
 		'position' => 'map-marker',
 		'print' => 'print',
